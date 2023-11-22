@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #text {
+      cursor: pointer;
+    }
+    #image {
+        width: 300px;
+        height: 300px;
+      display: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <p id="text" onclick="showImage()">Cartão black</p>
+  <img id="image" src="./MicrosoftTeams-image.png" alt="Imagem" onclick="hideImage()" />
+  
+  <script>
+    function showImage() {
+      var image = document.getElementById("image");
+      image.style.display = "block";
+    }
+    
+    function hideImage() {
+      var image = document.getElementById("image");
+      image.style.display = "none";
+    }
+  </script>
+</body>
+</html>
